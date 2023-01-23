@@ -1,0 +1,114 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+
+body{
+    background-color: #eceef3;
+}
+
+/* Estilos del header */
+
+header{
+    display: none;
+}
+
+/* Estilos de Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main h2{
+    margin: 1rem;
+}
+
+main h2 span{
+    display: block;
+}
+
+main .boton{
+    background-color: #51b0df;
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    color: whitesmoke;
+    box-shadow: 3px 3px 3px black;
+}
+
+main img{
+    width: 60%;
+}
+
+/* estilos de section */
+
+section{
+    display: none;
+}
+
+/* estilos de footer */
+
+footer h4{
+    text-align: center;
+}
+
+/* pantalla de tablet */
+
+@media screen and (min-width:600px){
+    /* estilos de header */
+    header{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        align-items: center;
+    }
+
+    header nav ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+
+    header nav ul li{
+        font-weight: bold ;
+    }
+
+    /* estilos de section */
+
+    section{
+        display: block;
+        display: flex;
+        background-color: #bee0f1;
+        padding: 1rem;
+    }
+    
+    section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    section div img{
+        width: 20%;
+    }
+}
+
+/* estilos de pantallas de escritorio */
+
+@media screen and (min-width:1024px){
+    body{
+        background-color: red;
+    }
+}
